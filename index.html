@@ -1,122 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#4a0f16">
-<meta name="description" content="Gowri Natural Dairy Farm — Pure Milk, Pure Trust. Explore dairy products, farm-to-family delivery, partnerships and business support opportunities.">
-<meta property="og:title" content="Gowri Natural Dairy Farm | Pure Milk, Pure Trust">
-<meta property="og:description" content="Natural dairy products from Gowri Natural Dairy Farm, Anakapalli, Andhra Pradesh.">
-<meta property="og:type" content="website">
-<title>Gowri Natural Dairy Farm | Pure Milk, Pure Trust</title>
-<link rel="icon" href="logo.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--maroon:#4a0f16;--maroon-dark:#2d080d;--maroon-mid:#6b1b24;--gold:#c89b3c;--gold-light:#efd071;--gold-pale:#f5e9c9;--cream:#fbf6e9;--ink:#2b211a;--muted:#6f6356;--line:#e7dcc4;--white:#fff;--green:#315b35;--shadow:0 12px 32px rgba(45,8,13,.10);--serif:'Fraunces',Georgia,serif;--sans:'Karla',Arial,sans-serif}
-*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:var(--sans);color:var(--ink);background:#fff;line-height:1.6}body.lock{overflow:hidden}h1,h2,h3,h4{font-family:var(--serif)}img{max-width:100%;display:block}button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit}.wrap{width:min(1180px,calc(100% - 40px));margin:auto}
-.announce{background:var(--gold);color:var(--maroon-dark);text-align:center;font-size:13px;font-weight:700;padding:9px 16px}.topbar{background:var(--maroon-dark);color:var(--gold-pale);font-size:12.5px}.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:8px 0;flex-wrap:wrap}.topbar a{text-decoration:none;color:var(--gold-pale);margin-right:16px}.social{display:flex;gap:7px}.social a{width:25px;height:25px;border-radius:50%;background:#ffffff18;display:grid;place-items:center;font-size:11px;margin:0}.social a:hover{background:var(--gold);color:var(--maroon-dark)}
-header{position:sticky;top:0;z-index:50;background:var(--maroon);color:#fff;border-bottom:2px solid var(--gold);box-shadow:0 4px 18px #0002}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none}.brand img{width:48px;height:48px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--gold);background:#fff}.brand-title{font-size:18px;font-weight:700;line-height:1.05}.brand-title span{color:var(--gold-light)}.brand small{display:block;color:var(--gold-pale);font-size:10.5px;font-weight:500;margin-top:3px}.nav-right{display:flex;align-items:center;gap:10px}nav.links{display:flex;align-items:center;gap:3px}nav.links a{color:#fff;text-decoration:none;font-size:13.5px;padding:9px 7px;border-radius:6px}nav.links a:hover{background:#ffffff12;color:var(--gold-light)}.cart-btn,.menu-btn{border:0}.cart-btn{position:relative;background:var(--gold);color:var(--maroon-dark);padding:10px 13px;border-radius:9px;font-weight:700;display:flex;align-items:center;gap:6px}.cart-count{background:var(--maroon-dark);color:var(--gold-light);min-width:21px;height:21px;border-radius:50%;display:grid;place-items:center;font-size:11px}.menu-btn{display:none;background:transparent;color:#fff;font-size:25px;padding:6px}
-.mobile-nav{display:none;background:var(--maroon-dark);padding:10px 20px 18px}.mobile-nav.open{display:grid}.mobile-nav a{color:#fff;text-decoration:none;padding:10px 0;border-bottom:1px solid #ffffff14}.mobile-nav .mobile-cart{margin-top:12px;background:var(--gold);color:var(--maroon-dark);border:0;border-radius:8px;padding:10px;font-weight:700}
-.hero{background:radial-gradient(circle at 12% 20%,#fff1 0 1%,transparent 35%),linear-gradient(120deg,var(--maroon-dark),var(--maroon) 55%,var(--maroon-mid));color:#fff;padding:78px 0 70px;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:5px;background:var(--gold)}.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:center}.badge{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--gold);background:#ffffff12;color:var(--gold-pale);border-radius:30px;padding:7px 13px;font-size:12.5px;font-weight:700;margin-bottom:15px}.hero h1{font-size:clamp(42px,6vw,70px);line-height:.98;margin-bottom:12px;font-weight:900}.hero .telugu{font-family:var(--serif);font-size:clamp(17px,2vw,21px);font-style:italic;color:var(--gold-light);margin-bottom:14px}.hero p.copy{font-size:17px;color:#f1e6d6;max-width:650px}.hero-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:23px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:12px 20px;border-radius:9px;text-decoration:none;border:1px solid transparent;font-weight:700;font-size:14px}.primary{background:var(--gold);color:var(--maroon-dark)}.primary:hover{background:var(--gold-light)}.secondary{border-color:var(--gold-light);color:var(--gold-light);background:transparent}.hero-note{display:inline-flex;margin-top:15px;border:1px solid #ffffff22;background:#ffffff0d;border-radius:30px;padding:8px 13px;font-size:12.5px;color:var(--gold-pale)}.hero-logo{display:grid;place-items:center}.hero-logo img{width:min(350px,100%);filter:drop-shadow(0 22px 35px #0007);border-radius:50%}
-section{padding:68px 0}.alt{background:var(--cream)}.section-title{text-align:center;margin-bottom:34px}.section-title h2{color:var(--maroon);font-size:34px;line-height:1.15}.section-title p{color:var(--muted);margin-top:7px}.gold-rule{width:70px;height:3px;background:var(--gold);margin:11px auto 0}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about-visual{position:relative}.about-visual img{width:min(400px,100%);margin:auto;border-radius:20px;box-shadow:var(--shadow)}.about-copy h2{color:var(--maroon);font-size:31px;margin-bottom:12px}.about-copy p{color:var(--muted);margin-bottom:16px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:11px;list-style:none}.checks li{display:flex;gap:8px;align-items:center;font-size:14px}.checks li:before{content:'✓';width:21px;height:21px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--maroon-dark);font-weight:800;font-size:11px;flex:none}
-.filter-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:28px}.filter-btn{border:1px solid var(--line);background:#fff;color:var(--maroon);padding:8px 15px;border-radius:22px;font-size:13px}.filter-btn.active{background:var(--maroon);color:var(--gold-light);border-color:var(--maroon)}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 6px 20px #4a0f1609;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden}.product-card:hover{box-shadow:var(--shadow);transform:translateY(-2px)}.product-top{height:175px;background:linear-gradient(180deg,#fffdf7,var(--gold-pale));border-radius:13px;display:grid;place-items:center;position:relative}.product-logo{position:absolute;top:10px;right:10px;width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);background:#fff}.pack{position:relative;display:flex;align-items:flex-end;justify-content:center}.milk-bottle{width:65px;height:130px;background:linear-gradient(90deg,#eee,#fff 30%,#f7f2e8);border:1px solid #d9cfb9;border-radius:10px 10px 5px 5px;box-shadow:0 6px 15px #0002}.milk-bottle:before{content:"";position:absolute;top:-13px;left:50%;transform:translateX(-50%);width:24px;height:15px;background:var(--maroon);border-radius:3px 3px 0 0}.milk-bottle .mini-logo{width:44px;height:44px;border-radius:50%;margin:42px auto 0;object-fit:cover;border:1px solid var(--gold)}.jar{width:72px;height:82px;background:linear-gradient(#fff7df,#ead49b);border:1px solid #d2bc7a;border-radius:10px 10px 16px 16px;box-shadow:0 6px 15px #0002}.jar:before{content:"";position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:52px;height:12px;background:var(--gold);border-radius:4px}.jar .mini-logo{width:32px;height:32px;border-radius:50%;margin:31px auto 0;object-fit:cover;border:1px solid var(--maroon)}.product-tag{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:700}.product-card h3{font-size:21px;color:var(--maroon)}.desc{font-size:13px;color:var(--muted);min-height:40px}.label{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}.size-row{display:flex;gap:6px;flex-wrap:wrap}.size-btn{border:1px solid var(--line);background:#fff;padding:6px 9px;border-radius:7px;font-size:12px;color:var(--maroon)}.size-btn.sel{background:var(--maroon);color:#fff;border-color:var(--maroon)}.qty-row{display:flex;align-items:center;gap:10px}.qty-btn{width:30px;height:30px;border:1px solid var(--line);background:#fff;border-radius:7px;color:var(--maroon);font-size:18px;line-height:1}.product-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:12px;margin-top:3px}.price{font-family:var(--serif);font-size:23px;font-weight:800;color:var(--maroon)}.price small{font-family:var(--sans);font-size:11px;font-weight:400;color:var(--muted)}.add-btn{background:var(--maroon);color:var(--gold-light);border:0;padding:9px 13px;border-radius:8px;font-weight:700;font-size:13px}.add-btn:hover{background:var(--maroon-mid)}
-.packaging{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.packaging img{width:100%;border-radius:18px;box-shadow:var(--shadow)}.pack-list{display:grid;gap:13px}.pack-item{display:flex;gap:13px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px}.pack-num{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:var(--maroon);color:var(--gold-light);font-weight:700;flex:none}.pack-item h3{color:var(--maroon);font-size:17px}.pack-item p{font-size:12.5px;color:var(--muted)}
-.tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.tech-item{background:#fff;border:1px solid var(--line);border-radius:14px;padding:19px;display:flex;align-items:center;gap:12px;font-size:14px}.dot{width:11px;height:11px;background:var(--gold);border-radius:50%;flex:none}
-.process{display:grid;grid-template-columns:repeat(7,1fr);gap:9px}.pstep{background:#fff;border:1px solid var(--line);border-radius:13px;padding:16px 8px;text-align:center}.picon{width:44px;height:44px;background:var(--maroon);color:var(--gold-light);border-radius:50%;display:grid;place-items:center;margin:0 auto 9px;font-size:18px}.pstep h4{color:var(--maroon);font-size:13px}.pstep p{font-size:11px;color:var(--muted);margin-top:3px}
-.benefit-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:13px}.benefit{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 9px;text-align:center}.benefit .icon{font-size:25px;margin-bottom:7px}.benefit h4{font-size:12.5px;color:var(--maroon)}
-.plan{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.plan-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:21px}.num{width:36px;height:36px;background:var(--maroon);color:var(--gold-light);border-radius:50%;display:grid;place-items:center;font-weight:800;margin-bottom:11px}.plan-card h3{color:var(--maroon);font-size:18px}.plan-card p{font-size:13px;color:var(--muted);margin-top:4px}.highlight{background:var(--maroon-dark);color:#fff;border:1px solid var(--gold);border-radius:18px;padding:30px;margin-top:25px}.highlight h2{color:var(--gold-light);font-size:25px;margin-bottom:8px}.highlight p{font-size:14px;color:#f1e6d6}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-bottom:25px}.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;text-align:center}.stat b{display:block;font-family:var(--serif);font-size:28px;color:var(--maroon)}.stat span{font-size:12px;color:var(--muted)}.invest-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.invest-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px}.invest-card h3{font-size:19px;color:var(--maroon);margin-bottom:7px}.invest-card p{font-size:13.5px;color:var(--muted)}.funds{background:#fff;border:1px solid var(--line);border-radius:15px;padding:24px;margin-top:22px}.funds h3{font-size:20px;color:var(--maroon);margin-bottom:15px}.bar{display:grid;grid-template-columns:190px 1fr 45px;align-items:center;gap:10px;margin:10px 0;font-size:13px}.track{height:13px;background:var(--gold-pale);border-radius:20px;overflow:hidden}.fill{height:100%;background:var(--maroon);border-radius:20px}.disclaimer{font-size:11.5px;color:var(--muted);border-top:1px solid var(--line);margin-top:16px;padding-top:13px}
-.form{max-width:700px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:17px;padding:25px;box-shadow:0 6px 20px #4a0f1608}.form-note{font-size:12.5px;color:var(--muted);margin-bottom:10px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}.form input,.form textarea,.form select{width:100%;padding:11px 12px;margin:6px 0;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);outline:none}.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--gold);box-shadow:0 0 0 3px #c89b3c18}.full{grid-column:1/-1}.form .btn{margin-top:9px;border:0}
-footer{background:var(--maroon-dark);color:#d8c9ac;padding:48px 0 20px;border-top:4px solid var(--gold)}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:30px;padding-bottom:25px}.footer-brand{display:flex;align-items:center;gap:10px;color:var(--gold-light);margin-bottom:10px}.footer-brand img{width:38px;height:38px;border-radius:50%}.footer-grid h4{color:var(--gold-light);font-size:15px;margin-bottom:11px}.footer-grid p,.footer-grid a{font-size:13px;color:#d8c9ac;text-decoration:none;display:block;margin-bottom:7px}.footer-grid a:hover{color:var(--gold-light)}.bottom{border-top:1px solid #ffffff18;padding-top:15px;text-align:center;font-size:12px}
-.overlay{position:fixed;inset:0;background:#1a0509b8;z-index:100;display:none}.overlay.open{display:flex;justify-content:flex-end}.drawer{width:min(440px,100%);height:100%;background:#fff;padding:22px;display:flex;flex-direction:column;overflow:auto}.close{align-self:flex-end;background:transparent;border:0;font-size:28px;color:var(--muted);line-height:1}.drawer h2{color:var(--maroon);font-size:24px;margin:5px 0 14px}.step-track{display:flex;gap:5px;margin-bottom:18px}.step-track span{height:5px;flex:1;background:var(--line);border-radius:4px}.step-track span.done{background:var(--maroon)}.cart-list{flex:1}.cart-item{display:grid;grid-template-columns:1fr auto;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}.cart-item strong{display:block;color:var(--maroon);font-size:14px}.cart-item small{color:var(--muted)}.remove{background:none;border:0;color:#8c2d1f;text-decoration:underline;font-size:12px}.cart-total{display:flex;justify-content:space-between;border-top:2px solid var(--maroon);padding:15px 0;font-size:18px;font-weight:800}.drawer input,.drawer textarea{width:100%;padding:11px;margin:6px 0;border:1px solid var(--line);border-radius:8px}.drawer .actions{display:flex;gap:8px}.drawer .actions .btn{flex:1}.empty{text-align:center;color:var(--muted);padding:35px 5px}.success{text-align:center;padding:35px 5px}.success .tick{width:60px;height:60px;background:var(--maroon);color:var(--gold-light);border-radius:50%;display:grid;place-items:center;font-size:28px;margin:0 auto 13px}.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);background:var(--maroon-dark);color:#fff;padding:11px 16px;border-radius:8px;opacity:0;pointer-events:none;transition:.25s;z-index:150;font-size:13px}.toast.show{opacity:1;transform:translate(-50%,0)}
-@media(max-width:1050px){nav.links{display:none}.menu-btn{display:block}.process{grid-template-columns:repeat(4,1fr)}.benefit-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:800px){.hero{padding:55px 0}.hero-grid,.about-grid,.packaging,.invest-grid,.product-grid,.plan,.stats,.tech-grid{grid-template-columns:1fr}.hero-logo{order:-1}.hero-logo img{width:190px}.checks{grid-template-columns:1fr}.process{grid-template-columns:1fr 1fr}.benefit-grid{grid-template-columns:repeat(2,1fr)}.bar{grid-template-columns:120px 1fr 38px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.topbar .wrap{justify-content:center;text-align:center}.footer-grid{grid-template-columns:1fr}.wrap{width:min(100% - 28px,1180px)}}
-@media(max-width:480px){.announce{font-size:11.5px}.brand-title{font-size:15px}.brand small{font-size:9px}.brand img{width:42px;height:42px}.hero h1{font-size:43px}.hero-actions .btn{width:100%}.process{grid-template-columns:1fr}.benefit-grid{grid-template-columns:1fr 1fr}.bar{grid-template-columns:1fr 42px}.bar .track{grid-column:1/-1;grid-row:2}.drawer{padding:17px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gowri Natural Dairy Farm - Pure Milk, Pure Trust. Natural dairy products from our farm to your family.">
+  <meta name="theme-color" content="#5b0714">
+  <title>Gowri Natural Dairy Farm | Pure Milk. Pure Trust.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --maroon:#5b0714;
+      --maroon-dark:#3d040d;
+      --gold:#d5a63b;
+      --gold-light:#f3dfaa;
+      --cream:#fbf5e9;
+      --paper:#fffdf8;
+      --text:#2b2522;
+      --muted:#756c68;
+      --border:#eadfce;
+      --shadow:0 16px 45px rgba(61,4,13,.12);
+      --radius:22px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:"DM Sans",Arial,sans-serif;
+      color:var(--text);
+      background:var(--paper);
+      line-height:1.65;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .topbar{
+      background:var(--maroon-dark);
+      color:#fff;
+      text-align:center;
+      padding:8px 16px;
+      font-size:12px;
+      letter-spacing:.3px;
+    }
+    header{
+      position:sticky;top:0;z-index:50;
+      background:rgba(91,7,20,.97);
+      backdrop-filter:blur(12px);
+      color:#fff;
+      border-bottom:1px solid rgba(213,166,59,.25);
+    }
+    .nav{
+      max-width:1180px;margin:auto;padding:12px 20px;
+      display:flex;align-items:center;justify-content:space-between;gap:20px;
+    }
+    .brand{display:flex;align-items:center;gap:12px;min-width:0}
+    .brand img{
+      width:54px;height:54px;border-radius:50%;object-fit:cover;
+      border:2px solid var(--gold);background:#fff;
+    }
+    .brand-text strong{
+      display:block;font-family:"Playfair Display",serif;font-size:18px;
+      line-height:1.1;color:#fff;
+    }
+    .brand-text span{font-size:10px;color:var(--gold-light);letter-spacing:.7px}
+    .links{display:flex;gap:22px;align-items:center;font-size:14px}
+    .links a:hover{color:var(--gold-light)}
+    .cart{
+      border:1px solid rgba(255,255,255,.3);padding:9px 13px;border-radius:999px;
+      font-weight:700;font-size:13px;
+    }
+    .menu-btn{display:none;background:none;border:0;color:#fff;font-size:27px}
+
+    .hero{
+      background:
+        linear-gradient(90deg,rgba(61,4,13,.97) 0%,rgba(91,7,20,.92) 46%,rgba(91,7,20,.62) 100%),
+        url("assets/package-visual.png") center/cover no-repeat;
+      color:#fff;
+      min-height:650px;
+      display:flex;align-items:center;
+    }
+    .hero-inner{
+      max-width:1180px;width:100%;margin:auto;padding:70px 20px;
+      display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center;
+    }
+    .pill{
+      display:inline-flex;align-items:center;gap:7px;
+      border:1px solid rgba(243,223,170,.55);color:var(--gold-light);
+      padding:7px 13px;border-radius:999px;font-size:12px;font-weight:700;
+      margin-bottom:18px;background:rgba(0,0,0,.12);
+    }
+    h1,h2,h3{font-family:"Playfair Display",serif}
+    h1{font-size:clamp(42px,6vw,74px);line-height:1.02;margin-bottom:18px}
+    .hero h1 span{color:var(--gold)}
+    .hero p{max-width:640px;color:#f7e9df;font-size:16px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:8px;
+      padding:13px 20px;border-radius:10px;font-weight:700;font-size:14px;
+      border:1px solid transparent;cursor:pointer;
+    }
+    .btn-gold{background:var(--gold);color:var(--maroon-dark)}
+    .btn-outline{border-color:rgba(255,255,255,.45);color:#fff}
+    .hero-card{
+      justify-self:end;max-width:440px;border:1px solid rgba(255,255,255,.22);
+      background:rgba(255,255,255,.10);backdrop-filter:blur(8px);
+      border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);
+    }
+    .hero-card img{width:100%;border-radius:15px;max-height:430px;object-fit:cover}
+    .hero-card small{display:block;text-align:center;color:#f7e9df;margin-top:10px}
+
+    section{padding:75px 20px}
+    .container{max-width:1180px;margin:auto}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 38px}
+    .eyebrow{color:var(--maroon);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:2px;margin-bottom:9px}
+    h2{font-size:clamp(32px,4vw,48px);line-height:1.15;color:var(--maroon);margin-bottom:13px}
+    .section-head p{color:var(--muted)}
+    .about{background:#fff}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .about-logo{background:var(--cream);padding:25px;border-radius:28px}
+    .about-logo img{width:min(430px,100%);margin:auto}
+    .about-copy p{color:var(--muted);margin-bottom:18px}
+    .checks{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .checks div{font-size:13px;font-weight:600}
+    .checks span{display:inline-grid;place-items:center;width:21px;height:21px;background:var(--gold);color:#fff;border-radius:50%;margin-right:7px;font-size:11px}
+
+    .products{background:var(--cream)}
+    .filter-row{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+    .filter{
+      border:1px solid var(--border);background:#fff;padding:8px 15px;border-radius:999px;
+      font-size:12px;font-weight:700;cursor:pointer;color:var(--muted)
+    }
+    .filter.active{background:var(--maroon);color:#fff;border-color:var(--maroon)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .product{
+      background:#fff;border:1px solid var(--border);border-radius:18px;overflow:hidden;
+      box-shadow:0 8px 25px rgba(61,4,13,.06)
+    }
+    .product-img{height:230px;background:linear-gradient(145deg,#fffdf8,#f7ebd0);display:grid;place-items:center;padding:18px}
+    .product-img img{height:100%;width:100%;object-fit:contain;border-radius:12px}
+    .product-body{padding:20px}
+    .tag{font-size:10px;font-weight:800;letter-spacing:1px;color:var(--gold);text-transform:uppercase}
+    .product h3{color:var(--maroon);font-size:24px;margin:4px 0}
+    .product p{font-size:13px;color:var(--muted);min-height:42px}
+    .price-row{display:flex;align-items:center;justify-content:space-between;margin-top:15px}
+    .price{font-weight:800;font-size:21px;color:var(--maroon)}
+    .add{
+      background:var(--maroon);color:#fff;border:0;border-radius:9px;
+      padding:10px 14px;font-weight:700;cursor:pointer
+    }
+
+    .story{background:#fff}
+    .story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .story-card{padding:28px;border:1px solid var(--border);border-radius:18px;background:var(--paper)}
+    .icon{font-size:28px;margin-bottom:10px}
+    .story-card h3{color:var(--maroon);font-size:23px;margin-bottom:6px}
+    .story-card p{color:var(--muted);font-size:13px}
+
+    .invest{
+      background:linear-gradient(135deg,var(--maroon-dark),var(--maroon));
+      color:#fff;
+    }
+    .invest-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
+    .invest h2{color:#fff}
+    .invest p{color:#f5e3d9}
+    .invest-box{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);padding:28px;border-radius:20px}
+    .invest-box strong{font-size:31px;color:var(--gold);display:block}
+    .invest-box span{font-size:12px;color:#f5e3d9}
+
+    .contact{background:var(--cream)}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .contact-card{background:#fff;padding:28px;border-radius:20px;border:1px solid var(--border)}
+    .contact-card h3{color:var(--maroon);font-size:25px;margin-bottom:10px}
+    .contact-card p{color:var(--muted);font-size:14px;margin:7px 0}
+    footer{background:#26030a;color:#eadbd3;padding:28px 20px;text-align:center;font-size:12px}
+    footer strong{color:var(--gold-light)}
+
+    .toast{
+      position:fixed;right:18px;bottom:18px;background:var(--maroon);color:#fff;
+      padding:13px 17px;border-radius:10px;box-shadow:var(--shadow);
+      opacity:0;transform:translateY(15px);pointer-events:none;transition:.25s;z-index:100
+    }
+    .toast.show{opacity:1;transform:none}
+
+    @media(max-width:800px){
+      .links{display:none}.menu-btn{display:block}
+      .nav.open .links{
+        display:flex;position:absolute;top:78px;left:0;right:0;background:var(--maroon-dark);
+        padding:18px 20px;flex-direction:column;align-items:flex-start;border-bottom:1px solid #6d2633
+      }
+      .hero{min-height:auto}
+      .hero-inner,.about-grid,.invest-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-card{justify-self:stretch;max-width:none}
+      .grid{grid-template-columns:1fr 1fr}
+      .story-grid{grid-template-columns:1fr}
+      .checks{grid-template-columns:1fr}
+    }
+    @media(max-width:520px){
+      .grid{grid-template-columns:1fr}
+      section{padding:58px 16px}
+      .hero-inner{padding:55px 16px}
+      h1{font-size:46px}
+      .brand-text strong{font-size:15px}
+      .brand img{width:46px;height:46px}
+    }
+  </style>
 </head>
+
 <body>
-<div class="announce">🚀 <strong>Pre-orders open</strong> · Planned production & delivery start: <strong>22 April 2027</strong></div>
-<div class="topbar"><div class="wrap"><div><a href="tel:+919493876463">📞 +91 94938 76463</a><a href="mailto:gowrinaturaldairyfarm888@gmail.com">✉ gowrinaturaldairyfarm888@gmail.com</a></div><div class="social"><a href="https://www.facebook.com/share/1EwhZ38Q31/" target="_blank" rel="noopener" aria-label="Facebook">f</a><a href="https://www.instagram.com/gowrinaturaldairyfarm" target="_blank" rel="noopener" aria-label="Instagram">ig</a><a href="https://youtube.com/@gowrinaturaldairyfarm" target="_blank" rel="noopener" aria-label="YouTube">▶</a><a href="https://x.com/GOWRINATURAL888" target="_blank" rel="noopener" aria-label="X">X</a><a href="https://wa.me/919493876463" target="_blank" rel="noopener" aria-label="WhatsApp">wa</a></div></div></div>
-<header><div class="wrap nav"><a class="brand" href="#home"><img src="logo.png" alt="Gowri Natural Dairy Farm logo"><div class="brand-title">GOWRI <span>NATURAL DAIRY</span><small>& Farming · Anakapalli, Andhra Pradesh</small></div></a><div class="nav-right"><nav class="links"><a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#technology">Technology</a><a href="#plan">Plan</a><a href="#invest">Invest</a><a href="#donate">Support</a><a href="#contact">Contact</a></nav><button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button><button class="cart-btn" onclick="openCart()">🧺 Cart <span class="cart-count" id="cartCount">0</span></button></div></div><div class="mobile-nav" id="mobileNav"><a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#technology">Technology</a><a href="#plan">Plan</a><a href="#invest">Invest</a><a href="#donate">Support</a><a href="#contact">Contact</a><button class="mobile-cart" onclick="openCart();closeMenu()">🧺 Open Cart (<span id="mobileCartCount">0</span>)</button></div></header>
+  <div class="topbar">✨ Pre-orders open · Planned production & delivery starts: <strong>22 April 2027</strong></div>
 
-<main>
-<section class="hero" id="home"><div class="wrap hero-grid"><div><div class="badge">🌱 Smart Integrated Farming</div><h1>Pure Milk.<br>Pure Trust.</h1><p class="telugu">ప్రకృతి నుండి స్వచ్ఛమైన పాలు — From Our Farm to Your Family</p><p class="copy">Gowri Natural Dairy Farm is building an integrated dairy and farming ecosystem focused on quality, hygiene, animal care, sustainable practices and a direct farm-to-family model.</p><div class="hero-actions"><a class="btn primary" href="#products">🥛 Explore Products</a><a class="btn secondary" href="#invest">🤝 Investment & Partnership</a></div><span class="hero-note">📅 Planned production & delivery begins 22 April 2027</span></div><div class="hero-logo"><img src="logo.png" alt="Gowri Natural Dairy Farm emblem"></div></div></section>
+  <header>
+    <nav class="nav" id="nav">
+      <a class="brand" href="#home" aria-label="Gowri Natural Dairy Farm home">
+        <img src="assets/logo.png" alt="Gowri Natural Dairy Farm logo">
+        <span class="brand-text">
+          <strong>Gowri Natural Dairy</strong>
+          <span>PURE MILK · PURE TRUST</span>
+        </span>
+      </a>
+      <button class="menu-btn" onclick="toggleMenu()" aria-label="Open menu">☰</button>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#investment">Investment</a>
+        <a href="#contact">Contact</a>
+        <a class="cart" href="#products">🛒 Cart <span id="cartCount">0</span></a>
+      </div>
+    </nav>
+  </header>
 
-<section id="about"><div class="wrap about-grid"><div class="about-visual"><img src="logo.png" alt="Gowri Natural Dairy Farm emblem"></div><div class="about-copy"><h2>About Gowri Natural Dairy Farm</h2><p>Our goal is to create a modern, transparent and sustainable dairy enterprise where animal care, clean handling, responsible farming and customer trust work together.</p><p>We plan to combine dairy with sheep, goat, fish and native chicken activities over time, creating multiple farm income streams and better resource utilisation.</p><ul class="checks"><li>Natural-farming focus</li><li>Indigenous / A2 breed focus</li><li>Hygienic milk handling</li><li>Traceable farm process</li><li>Rural employment</li><li>Sustainable resource use</li></ul></div></div></section>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div>
+          <div class="pill">🌱 Smart Integrated Farming</div>
+          <h1>Pure Milk.<br><span>Pure Trust.</span></h1>
+          <p><strong>ప్రకృతి నుండి స్వచ్ఛమైన పాలు — From Our Farm to Your Family.</strong></p>
+          <p style="margin-top:10px">Gowri Natural Dairy Farm is building an integrated dairy & farming ecosystem focused on quality, hygiene, animal care, sustainable practices, and a direct farm-to-family model.</p>
+          <div class="cta-row">
+            <a class="btn btn-gold" href="#products">🥛 Explore Products</a>
+            <a class="btn btn-outline" href="#investment">🤝 Investment & Partnership</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/package-visual.png" alt="Gowri Natural Dairy packaging options">
+          <small>Our planned packaging concept — PET Bottle · Paper Carton · Steel Container · Printed Pouch</small>
+        </div>
+      </div>
+    </section>
 
-<section class="alt" id="products"><div class="wrap"><div class="section-title"><h2>Products & Pricing</h2><div class="gold-rule"></div><p>Select a pack size, quantity and add it to your basket.</p></div><div class="filter-row"><button class="filter-btn active" onclick="filterProducts('all',this)">All</button><button class="filter-btn" onclick="filterProducts('milk',this)">Milk</button><button class="filter-btn" onclick="filterProducts('value',this)">Value-Added</button></div><div class="product-grid" id="productGrid"></div></div></section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-logo">
+            <img src="assets/logo.png" alt="Gowri Natural Dairy Farm emblem">
+          </div>
+          <div class="about-copy">
+            <div class="eyebrow">About Us</div>
+            <h2>About Gowri Natural Dairy Farm</h2>
+            <p>Our goal is to create a modern, transparent and sustainable dairy enterprise where animal care, clean handling, responsible farming and customer trust work together.</p>
+            <p>We plan to combine dairy with sheep, goat, fish and native chicken activities over time, creating multiple farm income streams and better resource utilisation.</p>
+            <div class="checks">
+              <div><span>✓</span>Natural-farming focus</div>
+              <div><span>✓</span>Indigenous / A2 breed focus</div>
+              <div><span>✓</span>Hygienic milk handling</div>
+              <div><span>✓</span>Traceable farm process</div>
+              <div><span>✓</span>Rural employment</div>
+              <div><span>✓</span>Sustainable resource use</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="packaging"><div class="wrap"><div class="section-title"><h2>Gowri Product Packaging</h2><div class="gold-rule"></div><p>Four packaging concepts for retail, eco-friendly and doorstep delivery formats.</p></div><div class="packaging"><img src="packaging-options.png" alt="Gowri Natural Dairy product packaging concepts: PET bottle, paper carton, steel container and printed pouch" loading="lazy"><div class="pack-list"><div class="pack-item"><div class="pack-num">1</div><div><h3>PET Bottle</h3><p>Convenient everyday retail and home-delivery format.</p></div></div><div class="pack-item"><div class="pack-num">2</div><div><h3>Paper Carton</h3><p>Eco-friendly concept for premium retail presentation.</p></div></div><div class="pack-item"><div class="pack-num">3</div><div><h3>Steel Container</h3><p>Reusable format for bulk and doorstep supply.</p></div></div><div class="pack-item"><div class="pack-num">4</div><div><h3>Printed Pouch</h3><p>Lightweight, practical format for daily milk distribution.</p></div></div></div></div></div></section>
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Farm Fresh</div>
+          <h2>Products & Pricing</h2>
+          <p>Select a pack size, quantity and add it to your basket. Prices shown are the current planned website prices.</p>
+        </div>
 
-<section class="alt" id="technology"><div class="wrap"><div class="section-title"><h2>Farm Technology & Infrastructure</h2><div class="gold-rule"></div><p>Planned systems for efficient, hygienic and sustainable operations.</p></div><div class="tech-grid"><div class="tech-item"><span class="dot"></span>Modern dairy equipment</div><div class="tech-item"><span class="dot"></span>Automatic / assisted milking</div><div class="tech-item"><span class="dot"></span>Milk chilling & cold chain</div><div class="tech-item"><span class="dot"></span>Solar & green energy</div><div class="tech-item"><span class="dot"></span>Waste & manure management</div><div class="tech-item"><span class="dot"></span>Water recycling & conservation</div></div></div></section>
+        <div class="filter-row">
+          <button class="filter active" onclick="filterProducts('all',this)">All</button>
+          <button class="filter" onclick="filterProducts('milk',this)">Milk</button>
+          <button class="filter" onclick="filterProducts('value',this)">Value-Added</button>
+        </div>
 
-<section><div class="wrap"><div class="section-title"><h2>A–Z Customer Experience</h2><div class="gold-rule"></div><p>From animal care to customer support.</p></div><div class="process"><div class="pstep"><div class="picon">🐄</div><h4>Animal Care</h4><p>Clean housing & feed</p></div><div class="pstep"><div class="picon">🥛</div><h4>Milking</h4><p>Hygienic process</p></div><div class="pstep"><div class="picon">🧪</div><h4>Quality Check</h4><p>Planned testing</p></div><div class="pstep"><div class="picon">⚙️</div><h4>Processing</h4><p>Safe handling</p></div><div class="pstep"><div class="picon">📦</div><h4>Packaging</h4><p>Product protection</p></div><div class="pstep"><div class="picon">🚚</div><h4>Delivery</h4><p>Doorstep supply</p></div><div class="pstep"><div class="picon">🎧</div><h4>Support</h4><p>Customer care</p></div></div></div></section>
+        <div class="grid" id="productGrid">
+          <article class="product" data-cat="milk">
+            <div class="product-img"><img src="assets/package-visual.png" alt="A2 cow milk packaging"></div>
+            <div class="product-body">
+              <div class="tag">Premium Milk</div>
+              <h3>A2 Cow Milk</h3>
+              <p>Premium A2 cow milk option for customers seeking a natural dairy product.</p>
+              <div class="price-row"><div class="price">₹80 / L</div><button class="add" onclick="addCart('A2 Cow Milk')">Add</button></div>
+            </div>
+          </article>
 
-<section class="alt"><div class="wrap"><div class="section-title"><h2>Our Product Values</h2><div class="gold-rule"></div></div><div class="benefit-grid"><div class="benefit"><div class="icon">🌿</div><h4>Natural Focus</h4></div><div class="benefit"><div class="icon">💪</div><h4>Nutrition Focus</h4></div><div class="benefit"><div class="icon">🐮</div><h4>A2 Product Option</h4></div><div class="benefit"><div class="icon">🧪</div><h4>Quality Checks</h4></div><div class="benefit"><div class="icon">✨</div><h4>Clean Handling</h4></div><div class="benefit"><div class="icon">🤝</div><h4>Local Farming</h4></div></div></div></section>
+          <article class="product" data-cat="milk">
+            <div class="product-img"><img src="assets/package-visual.png" alt="Natural cow milk packaging"></div>
+            <div class="product-body">
+              <div class="tag">Daily Fresh</div>
+              <h3>Normal Cow Milk</h3>
+              <p>Fresh cow milk planned for everyday family consumption.</p>
+              <div class="price-row"><div class="price">₹60 / L</div><button class="add" onclick="addCart('Normal Cow Milk')">Add</button></div>
+            </div>
+          </article>
 
-<section id="plan"><div class="wrap"><div class="section-title"><h2>Business Planning & Strategy</h2><div class="gold-rule"></div><p>Planning → Starting → Scaling → Expansion.</p></div><div class="plan"><div class="plan-card"><div class="num">1</div><h3>Planning</h3><p>Land, breeds, feed, sheds, registrations, equipment and financial planning.</p></div><div class="plan-card"><div class="num">2</div><h3>Starting</h3><p>Livestock, veterinary support, hygiene systems and initial customer network.</p></div><div class="plan-card"><div class="num">3</div><h3>Scaling</h3><p>Processing, chilling, packaging, delivery, digital marketing and retail.</p></div><div class="plan-card"><div class="num">4</div><h3>Expansion</h3><p>Integrated farming, more products and regional market expansion.</p></div></div><div class="highlight"><h2>Build a Long-Term Farm-to-Family Brand</h2><p>Investment and partnership structures will be documented and reviewed for legal, financial and regulatory compliance before accepting funds.</p></div></div></section>
+          <article class="product" data-cat="milk">
+            <div class="product-img"><img src="assets/package-visual.png" alt="Buffalo milk packaging"></div>
+            <div class="product-body">
+              <div class="tag">Rich & Creamy</div>
+              <h3>Buffalo Milk</h3>
+              <p>Rich buffalo milk planned for customers who prefer a fuller dairy profile.</p>
+              <div class="price-row"><div class="price">₹100 / L</div><button class="add" onclick="addCart('Buffalo Milk')">Add</button></div>
+            </div>
+          </article>
 
-<section class="alt" id="invest"><div class="wrap"><div class="section-title"><h2>Investors & Business Support</h2><div class="gold-rule"></div><p>For investors, strategic partners, distributors and business supporters.</p></div><div class="stats"><div class="stat"><b>4</b><span>Core growth phases</span></div><div class="stat"><b>3</b><span>Milk lines</span></div><div class="stat"><b>3</b><span>Value-added lines</span></div><div class="stat"><b>Farm → Family</b><span>Direct model</span></div></div><div class="invest-grid"><div class="invest-card"><h3>Equity Investment</h3><p>For eligible investors seeking long-term business participation. Valuation, shareholding and terms must be formally documented and legally reviewed.</p></div><div class="invest-card"><h3>Strategic Partnership</h3><p>Opportunities in processing, distribution, cold chain, farming inputs, technology and marketing.</p></div><div class="invest-card"><h3>Business Sponsorship</h3><p>Businesses may support specific farm-development initiatives, subject to appropriate agreements and tax treatment.</p></div></div><div class="funds"><h3>Indicative Use of Funds</h3><div class="bar"><span>Livestock & breeding</span><div class="track"><div class="fill" style="width:35%"></div></div><b>35%</b></div><div class="bar"><span>Sheds & infrastructure</span><div class="track"><div class="fill" style="width:25%"></div></div><b>25%</b></div><div class="bar"><span>Processing & cold chain</span><div class="track"><div class="fill" style="width:20%"></div></div><b>20%</b></div><div class="bar"><span>Packaging & branding</span><div class="track"><div class="fill" style="width:10%"></div></div><b>10%</b></div><div class="bar"><span>Working capital</span><div class="track"><div class="fill" style="width:10%"></div></div><b>10%</b></div><p class="disclaimer">Illustrative allocation only. Replace with the final project financial plan before presenting to investors. This website is not a securities offering and does not itself create an investment contract.</p></div></div></section>
+          <article class="product" data-cat="value">
+            <div class="product-img"><img src="assets/logo.png" alt="Gowri Natural Dairy products"></div>
+            <div class="product-body">
+              <div class="tag">Value Added</div>
+              <h3>Curd</h3>
+              <p>Planned fresh dairy curd made from quality farm milk.</p>
+              <div class="price-row"><div class="price">Coming Soon</div><button class="add" onclick="notify('Curd pre-order noted')">Pre-order</button></div>
+            </div>
+          </article>
 
-<section id="donate"><div class="wrap"><div class="section-title"><h2>Support / Donation Interest</h2><div class="gold-rule"></div><p>Tell us how you would like to support the farming project.</p></div><div class="form"><p class="form-note">This front-end form does not collect money. Submit to open a WhatsApp message with your details.</p><form onsubmit="sendSupport(event)"><div class="form-grid"><input required name="name" placeholder="Your name"><input required name="phone" type="tel" placeholder="Mobile number"><input name="email" type="email" placeholder="Email address"><select name="support"><option>Donation</option><option>Business Sponsorship</option><option>Strategic Partnership</option><option>Other Support</option></select><textarea class="full" name="message" rows="4" placeholder="How would you like to support?"></textarea></div><button class="btn primary" type="submit">📲 Send Support Interest</button></form></div></div></section>
+          <article class="product" data-cat="value">
+            <div class="product-img"><img src="assets/logo.png" alt="Gowri Natural Dairy paneer"></div>
+            <div class="product-body">
+              <div class="tag">Value Added</div>
+              <h3>Paneer</h3>
+              <p>Planned fresh paneer for homes, restaurants and institutional buyers.</p>
+              <div class="price-row"><div class="price">Coming Soon</div><button class="add" onclick="notify('Paneer pre-order noted')">Pre-order</button></div>
+            </div>
+          </article>
 
-<section class="alt" id="contact"><div class="wrap"><div class="section-title"><h2>Investor / Partner Enquiry</h2><div class="gold-rule"></div><p>Start a conversation with Gowri Natural Dairy Farm.</p></div><div class="form"><p class="form-note">Your enquiry will be prepared as a WhatsApp message. A real CRM / database can be connected later.</p><form onsubmit="sendEnquiry(event)"><div class="form-grid"><input required name="name" placeholder="Full name"><input required name="phone" type="tel" placeholder="Mobile number"><input name="email" type="email" placeholder="Email address"><select name="interest"><option>Investor</option><option>Business Partner</option><option>Distributor</option><option>Customer</option><option>Other</option></select><textarea required class="full" name="message" rows="5" placeholder="Your message"></textarea></div><button class="btn primary" type="submit">📲 Send Enquiry</button></form></div></div></section>
-</main>
+          <article class="product" data-cat="value">
+            <div class="product-img"><img src="assets/logo.png" alt="Gowri Natural Dairy ghee"></div>
+            <div class="product-body">
+              <div class="tag">Traditional</div>
+              <h3>Ghee</h3>
+              <p>Planned traditional dairy ghee as part of the future value-added range.</p>
+              <div class="price-row"><div class="price">Coming Soon</div><button class="add" onclick="notify('Ghee pre-order noted')">Pre-order</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<footer><div class="wrap footer-grid"><div><div class="footer-brand"><img src="logo.png" alt="Gowri Natural Dairy logo"><b>GOWRI NATURAL DAIRY</b></div><p>Pure Milk. Pure Trust. Building a sustainable farm-to-family dairy brand.</p></div><div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#plan">Business Plan</a><a href="#invest">Invest</a></div><div><h4>Products</h4><a href="#products">A2 Cow Milk · ₹80/L</a><a href="#products">Normal Cow Milk · ₹60/L</a><a href="#products">Buffalo Milk · ₹100/L</a><a href="#products">Curd · ₹60/500g</a><a href="#products">Paneer · ₹280/250g</a><a href="#products">Ghee · ₹600/500ml</a></div><div><h4>Contact</h4><p>📍 Anakapalli, Andhra Pradesh, India</p><a href="tel:+919493876463">📞 +91 94938 76463</a><a href="mailto:gowrinaturaldairyfarm888@gmail.com">✉ gowrinaturaldairyfarm888@gmail.com</a><a href="https://wa.me/919493876463" target="_blank" rel="noopener">💬 WhatsApp</a><a href="https://www.instagram.com/gowrinaturaldairyfarm" target="_blank" rel="noopener">📸 Instagram</a><a href="https://youtube.com/@gowrinaturaldairyfarm" target="_blank" rel="noopener">▶ YouTube</a></div></div><div class="wrap bottom">© <span id="year"></span> Gowri Natural Dairy Farm. All rights reserved.</div></footer>
+    <section class="story">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Our Model</div>
+          <h2>Smart Integrated Farming</h2>
+          <p>Dairy is the core, supported by complementary farm activities and responsible use of resources.</p>
+        </div>
+        <div class="story-grid">
+          <div class="story-card"><div class="icon">🐄</div><h3>Dairy</h3><p>Focus on animal welfare, clean milk handling, quality breeds and transparent farm practices.</p></div>
+          <div class="story-card"><div class="icon">🐐</div><h3>Livestock</h3><p>Future sheep and goat activities create diversified farm income and efficient resource use.</p></div>
+          <div class="story-card"><div class="icon">🐟</div><h3>Integrated Farm</h3><p>Fish and native chicken activities are planned as the ecosystem expands.</p></div>
+        </div>
+      </div>
+    </section>
 
-<div class="overlay" id="cartOverlay"><aside class="drawer" role="dialog" aria-modal="true" aria-label="Shopping cart" id="drawer"></aside></div><div class="toast" id="toast"></div>
-<script>
-const WHATSAPP='919493876463';
-const PRODUCTS=[
-{id:'a2',name:'A2 Cow Milk',tag:'Premium Milk',cat:'milk',desc:'Premium A2 cow milk option for customers seeking an A2-labelled product.',sizes:[['250 ML',.25],['500 ML',.5],['1 Litre',1],['2 Litres',2]],unitPrice:80,unitLabel:'/ litre'},
-{id:'cow',name:'Normal Cow Milk',tag:'Daily Milk',cat:'milk',desc:'Fresh cow milk option for everyday household use.',sizes:[['250 ML',.25],['500 ML',.5],['1 Litre',1],['2 Litres',2]],unitPrice:60,unitLabel:'/ litre'},
-{id:'buffalo',name:'Buffalo Milk',tag:'Rich Milk',cat:'milk',desc:'Rich buffalo milk suitable for daily use and dairy preparations.',sizes:[['250 ML',.25],['500 ML',.5],['1 Litre',1],['2 Litres',2]],unitPrice:100,unitLabel:'/ litre'},
-{id:'curd',name:'Curd',tag:'Value-Added',cat:'value',desc:'Fresh cultured curd in convenient household sizes.',sizes:[['250 g',.5],['500 g',1],['1 Kg',2]],unitPrice:60,unitLabel:'/ 500g'},
-{id:'paneer',name:'Paneer',tag:'Value-Added',cat:'value',desc:'Fresh paneer product line for home cooking and food service.',sizes:[['250 g',1],['500 g',2]],unitPrice:280,unitLabel:'/ 250g'},
-{id:'ghee',name:'Ghee',tag:'Value-Added',cat:'value',desc:'Premium clarified butter product line.',sizes:[['250 ML',.5],['500 ML',1],['1 Litre',2]],unitPrice:600,unitLabel:'/ 500ml'}
-];
-const state={}; PRODUCTS.forEach(p=>state[p.id]={size:1,qty:1}); let cart=[]; let checkoutStep=1; let lastOrder=null;
-const money=n=>'₹'+Number(n).toLocaleString('en-IN');
-function priceFor(p,i){return Math.round(p.unitPrice*p.sizes[i][1]);}
-function renderProducts(filter='all'){
- const grid=document.getElementById('productGrid'); grid.innerHTML='';
- PRODUCTS.filter(p=>filter==='all'||p.cat===filter).forEach(p=>{
-  const s=state[p.id], price=priceFor(p,s.size), isMilk=p.cat==='milk';
-  const card=document.createElement('article'); card.className='product-card';
-  card.innerHTML=`<div class="product-top"><img class="product-logo" src="logo.png" alt="Gowri Natural Dairy logo"><div class="pack"><div class="${isMilk?'milk-bottle':'jar'}"><img class="mini-logo" src="logo.png" alt="Product logo"></div></div></div><span class="product-tag">${p.tag}</span><h3>${p.name}</h3><p class="desc">${p.desc}</p><span class="label">Pack size</span><div class="size-row" data-sizes></div><span class="label">Quantity</span><div class="qty-row"><button class="qty-btn" data-minus aria-label="Decrease quantity">−</button><b data-qty>${s.qty}</b><button class="qty-btn" data-plus aria-label="Increase quantity">+</button></div><div class="product-foot"><div class="price" data-price>${money(price*s.qty)}<br><small>${p.sizes[s.size][0]} × ${s.qty}</small></div><button class="add-btn" data-add>🧺 Add</button></div>`;
-  const row=card.querySelector('[data-sizes]'); p.sizes.forEach((z,i)=>{const b=document.createElement('button');b.className='size-btn'+(i===s.size?' sel':'');b.textContent=z[0];b.onclick=()=>{s.size=i;renderProducts(filter)};row.appendChild(b)});
-  card.querySelector('[data-minus]').onclick=()=>{if(s.qty>1){s.qty--;renderProducts(filter)}};
-  card.querySelector('[data-plus]').onclick=()=>{if(s.qty<99){s.qty++;renderProducts(filter)}};
-  card.querySelector('[data-add]').onclick=()=>addToCart(p,s);
-  grid.appendChild(card);
- });
-}
-let currentFilter='all';
-function filterProducts(f,btn){currentFilter=f;document.querySelectorAll('.filter-btn').forEach(x=>x.classList.remove('active'));btn.classList.add('active');renderProducts(f);}
-function addToCart(p,s){const size=p.sizes[s.size][0],price=priceFor(p,s.size);const old=cart.find(x=>x.id===p.id&&x.size===size);if(old)old.qty+=s.qty;else cart.push({id:p.id,name:p.name,size,qty:s.qty,price});updateCartCount();toast(p.name+' added to basket');openCart();}
-function cartTotal(){return cart.reduce((n,x)=>n+x.price*x.qty,0)}
-function updateCartCount(){const n=cart.reduce((a,x)=>a+x.qty,0);document.getElementById('cartCount').textContent=n;document.getElementById('mobileCartCount').textContent=n;}
-function openCart(){checkoutStep=1;document.getElementById('cartOverlay').classList.add('open');document.body.classList.add('lock');renderDrawer();}
-function closeCart(){document.getElementById('cartOverlay').classList.remove('open');document.body.classList.remove('lock');}
-function track(){return `<div class="step-track"><span class="done"></span><span class="${checkoutStep>=2?'done':''}"></span><span class="${checkoutStep>=3?'done':''}"></span></div>`}
-function renderDrawer(){const d=document.getElementById('drawer'); if(checkoutStep===1){d.innerHTML=`<button class="close" onclick="closeCart()" aria-label="Close">×</button><h2>Your Basket</h2>${track()}<div class="cart-list" id="cartList"></div><div class="cart-total"><span>Total</span><span>${money(cartTotal())}</span></div><button class="btn primary" style="width:100%;border:0" ${cart.length?'':'disabled'} onclick="checkoutStep=2;renderDrawer()">Proceed to Delivery</button>`;const list=d.querySelector('#cartList');if(!cart.length){list.innerHTML='<div class="empty">Your basket is empty.<br>Add products from the Products section.</div>'}else{cart.forEach((x,i)=>{const row=document.createElement('div');row.className='cart-item';row.innerHTML=`<div><strong>${x.name}</strong><small>${x.size} × ${x.qty}</small></div><div style="text-align:right"><b>${money(x.price*x.qty)}</b><br><button class="remove" onclick="removeCart(${i})">Remove</button></div>`;list.appendChild(row)})}}
-else if(checkoutStep===2){d.innerHTML=`<button class="close" onclick="closeCart()">×</button><h2>Delivery Details</h2>${track()}<div style="flex:1"><input id="dName" placeholder="Full name" required><input id="dPhone" type="tel" placeholder="Mobile number" required><input id="dPin" inputmode="numeric" placeholder="PIN code"><textarea id="dAddress" rows="4" placeholder="Complete delivery address" required></textarea></div><div class="cart-total"><span>Total</span><span>${money(cartTotal())}</span></div><div class="actions"><button class="btn secondary" style="color:var(--maroon);border-color:var(--maroon)" onclick="checkoutStep=1;renderDrawer()">Back</button><button class="btn primary" onclick="placeOrder()">Review Order</button></div>`}
-else{d.innerHTML=`<button class="close" onclick="closeCart()">×</button><h2>Order Request Ready</h2>${track()}<div class="success"><div class="tick">✓</div><h3 style="color:var(--maroon);margin-bottom:6px">Thank you, ${escapeHtml(lastOrder.name)}!</h3><p style="color:var(--muted);font-size:13.5px">Your order details are ready. Tap the button below to send the order to Gowri Natural Dairy Farm on WhatsApp.</p></div><div class="cart-total"><span>Order total</span><span>${money(lastOrder.total)}</span></div><button class="btn primary" style="width:100%;border:0" onclick="sendWhatsAppOrder()">📲 Send Order on WhatsApp</button><button class="btn secondary" style="width:100%;margin-top:8px;color:var(--maroon);border-color:var(--maroon)" onclick="cart=[];updateCartCount();closeCart()">Done</button>`}}
-function placeOrder(){const name=document.getElementById('dName').value.trim(),phone=document.getElementById('dPhone').value.trim(),pin=document.getElementById('dPin').value.trim(),address=document.getElementById('dAddress').value.trim();if(!name||!phone||!address){toast('Please fill name, mobile and address');return}lastOrder={name,phone,pin,address,total:cartTotal(),items:cart.map(x=>({...x}))};checkoutStep=3;renderDrawer();}
-function sendWhatsAppOrder(){let msg=`*GOWRI NATURAL DAIRY FARM — ORDER REQUEST*%0A%0A`;msg+=`Name: ${encodeURIComponent(lastOrder.name)}%0AMobile: ${encodeURIComponent(lastOrder.phone)}%0APIN: ${encodeURIComponent(lastOrder.pin||'-')}%0AAddress: ${encodeURIComponent(lastOrder.address)}%0A%0A*Items*%0A`;lastOrder.items.forEach(x=>msg+=`${encodeURIComponent(x.name)} — ${encodeURIComponent(x.size)} × ${x.qty} = ${encodeURIComponent(money(x.price*x.qty))}%0A`);msg+=`%0A*Total: ${encodeURIComponent(money(lastOrder.total))}*`;window.open(`https://wa.me/${WHATSAPP}?text=${msg}`,'_blank');}
-function removeCart(i){cart.splice(i,1);updateCartCount();renderDrawer();}
-function escapeHtml(s){return s.replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
-function formDataToMessage(title,form){const fd=new FormData(form);let msg=`*${title}*%0A%0A`;for(const [k,v] of fd.entries()){if(v)msg+=`${encodeURIComponent(k)}: ${encodeURIComponent(v)}%0A`}return msg}
-function sendSupport(e){e.preventDefault();window.open(`https://wa.me/${WHATSAPP}?text=${formDataToMessage('GOWRI NATURAL DAIRY — SUPPORT INTEREST',e.target)}`,'_blank');e.target.reset();toast('WhatsApp message prepared');}
-function sendEnquiry(e){e.preventDefault();window.open(`https://wa.me/${WHATSAPP}?text=${formDataToMessage('GOWRI NATURAL DAIRY — BUSINESS ENQUIRY',e.target)}`,'_blank');e.target.reset();toast('WhatsApp message prepared');}
-function toast(t){const x=document.getElementById('toast');x.textContent=t;x.classList.add('show');clearTimeout(window._toast);window._toast=setTimeout(()=>x.classList.remove('show'),2200)}
-function closeMenu(){document.getElementById('mobileNav').classList.remove('open');document.getElementById('menuBtn').setAttribute('aria-expanded','false')}
-document.getElementById('menuBtn').onclick=()=>{const n=document.getElementById('mobileNav'),open=n.classList.toggle('open');document.getElementById('menuBtn').setAttribute('aria-expanded',open)};
-document.getElementById('cartOverlay').onclick=e=>{if(e.target.id==='cartOverlay')closeCart()};document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCart()});document.querySelectorAll('.mobile-nav a').forEach(a=>a.onclick=closeMenu);document.getElementById('year').textContent=new Date().getFullYear();renderProducts();updateCartCount();
-</script>
+    <section class="invest" id="investment">
+      <div class="container">
+        <div class="invest-grid">
+          <div>
+            <div class="eyebrow" style="color:var(--gold-light)">Partnership</div>
+            <h2>Build the Future of Natural Dairy With Us</h2>
+            <p>Gowri Natural Dairy Farm is designed as a scalable farm-to-consumer business. We welcome genuine business partnerships, strategic investors and supporters who align with sustainable agriculture.</p>
+            <div class="cta-row">
+              <a class="btn btn-gold" href="#contact">Discuss Partnership</a>
+            </div>
+          </div>
+          <div class="invest-box">
+            <strong>₹4.50 Crore</strong>
+            <span>Planned equity requirement for the larger growth phase. Final terms are subject to due diligence, business plan and legal documentation.</span>
+            <hr style="border:0;border-top:1px solid rgba(255,255,255,.2);margin:20px 0">
+            <strong>20–25%</strong>
+            <span>Indicative equity range discussed for strategic investment participation.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <div class="eyebrow">Connect</div>
+          <h2>Contact Gowri Natural Dairy</h2>
+          <p>For pre-orders, partnerships, investment discussions and farm information.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Gowri Natural Dairy Farm</h3>
+            <p>📍 Anakapalli, Andhra Pradesh, India</p>
+            <p>📞 +91 9438 76463</p>
+            <p>✉️ gowrinaturaldairyfarm@gmail.com</p>
+          </div>
+          <div class="contact-card">
+            <h3>Pre-orders & Partnerships</h3>
+            <p>Production and delivery are planned to begin from <strong>22 April 2027</strong>.</p>
+            <div class="cta-row">
+              <a class="btn btn-gold" href="mailto:gowrinaturaldairyfarm@gmail.com">Email Us</a>
+              <a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/91943876463" target="_blank" rel="noopener">WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>GOWRI NATURAL DAIRY FARM</strong> · Pure Milk. Pure Trust.<br>
+    © 2026 Gowri Natural Dairy Farm. All rights reserved.
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script>
+    let cart = 0;
+
+    function toggleMenu(){
+      document.getElementById('nav').classList.toggle('open');
+    }
+
+    function addCart(name){
+      cart++;
+      document.getElementById('cartCount').textContent = cart;
+      notify(name + " added to cart");
+    }
+
+    function notify(message){
+      const t = document.getElementById('toast');
+      t.textContent = message;
+      t.classList.add('show');
+      clearTimeout(window.toastTimer);
+      window.toastTimer = setTimeout(()=>t.classList.remove('show'),2200);
+    }
+
+    function filterProducts(cat, btn){
+      document.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.product').forEach(card=>{
+        card.style.display = (cat === 'all' || card.dataset.cat === cat) ? '' : 'none';
+      });
+    }
+
+    document.querySelectorAll('.links a').forEach(a=>{
+      a.addEventListener('click',()=>document.getElementById('nav').classList.remove('open'));
+    });
+  </script>
 </body>
 </html>
